@@ -1,0 +1,21 @@
+html{
+    box-sizing: border-box;
+}
+.container{
+    display:grid;
+    grid-template-areas: 
+    "menu inf";
+    
+}
+.navigation{
+    grid-area: menu;
+    width: 40vh;
+    height:100vh;
+    background-color:aquamarine;
+}
+.main-page{
+    grid-area: inf;
+    width: 60vh;
+    height:100vh;
+    background-color:aqua;
+}
