@@ -71,6 +71,9 @@ a{
     text-decoration: none;
     color:black;
 }
+code{
+    display:block;
+}
 
 @media screen and (max-width:425px){
     .container{

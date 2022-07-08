@@ -17,7 +17,8 @@
                 <a href="#JavaScript-and-Java"><header><p class="nav-chapter">JavaScript and Java</p></header></a>
                 <a href="#Hello-world"><header><p class="nav-chapter">Hello world</p></header></a>
                 <a href="#Variables"><header><p class="nav-chapter">Variables</p></header></a>
-                <a href="#Declaring-variables"><header class="header-nav"><p class="nav-chapter">Declaring variables</p></header></a>
+                <a href="#Variables"><header><p class="nav-chapter">Declaring-variables</p></header></a>
+                <a href="#Variable-scope"><header class="header-nav"><p class="nav-chapter">Variable-scope</p></header></a>
             </nav>
             <main class="main-page" id="main-doc">
                 <section class="main-section" id="Introduction">
@@ -54,10 +55,10 @@
                     <header>
                         <h2>Hello world</h2>
                         <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-                        <div class="background background1">
+                        <code class="background background1">
                             function greetMe(yourName) { alert("Hello " + yourName); }
                             <br>greetMe("World");
-                        </div>
+                        </code>
                         <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
                     </header>
                 </section>
@@ -75,19 +76,31 @@
                         <p>You can declare a variable in three ways:
                             <br>With the keyword var. For example,
                         </p>
-                        <div class="background">var x = 42.</div>
+                        <code class="background">var x = 42.</code>
                         <p>
                             This syntax can be used to declare both local and global variables.
                             <br>By simply assigning it a value. For example,
                         </p>
-                        <div class="background">x = 42.</div>
+                        <code class="background">x = 42.</code>
                         <p>
                             This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
                             <br>With the keyword let. For example,
                         </p>
-                        <div class="background">let y = 13.</div>
+                        <code class="background">let y = 13.</code>
                         <p>
                             This syntax can be used to declare a block scope local variable. See Variable scope below.
+                        </p>
+                    </header>
+                </section>
+                <section class="main-section" id="Variable-scope">
+                    <header>
+                        <h2>Variable scope</h2>
+                        <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
+                        </p>
+                        <code class="background">if (true) { var x = 5; } console.log(x); // 5</code>
+                        <p>
+                            This syntax can be used to declare both local and global variables.
+                            <br>By simply assigning it a value. For example,
                         </p>
                     </header>
                 </section>
