@@ -1,11 +1,9 @@
 html{
     box-sizing: border-box;
-    scroll-behavior: smooth;
     font-family:sans-serif;
 }
 body{
     margin:0;
-    /* new line*/
     overflow: hidden;
 }
 .container{
@@ -30,6 +28,7 @@ body{
     grid-area: inf;
     height: 100vh;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 p, ul{
     font-size:18px;
@@ -72,14 +71,28 @@ a{
     text-decoration: none;
     color:black;
 }
-@media (max-width:412px){
+
+@media screen and (max-width:425px){
     .container{
-        grid-template-areas:
-        "menu"
-        "inf";
+        grid-template-columns: none;
     }
-    .navigation a{
-        display:flex;
-        justify-content: space-evenly;
+    .navigation{
+        display:none;
+    }
+    p{
+        margin:10px;
+        text-align: justify;
+    }
+    ul{
+        margin:20px;
+    }
+    .main-section .background{
+        width:70%;
+        text-align: center;
+    }
+    .main-section .background1{
+        text-align:left;
+        width:80%;
+        margin:5px auto;
     }
 }
