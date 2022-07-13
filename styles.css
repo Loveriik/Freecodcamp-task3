@@ -34,19 +34,21 @@ p, ul{
     font-size:18px;
     line-height: 24px;
 }
-.navigation header:not(.header-nav){
-    height: 50px;
+/* .navigation*/ .nav-link:not(.header-nav){
+    /* height: 50px; */
     border-bottom:2px solid rgba(0, 22, 22, 0.4);
 }
-.nav-chapter{
-    margin-left:20px;
+.nav-link{
+    display: block;
+    padding:20px 20px;
 }
+
 h2{
     font-weight: 500;
     font-size: 30px;
     font-family:Tahoma;
 }
-.main-page h2{
+.headline{
     margin-left:40px;
 }
 .main-page p{
@@ -66,6 +68,7 @@ ul{
     padding-top:10px;
     padding-left:10px;
     padding-bottom:10px;
+    display: block;
 }
 a{
     text-decoration: none;
